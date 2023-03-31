@@ -60,7 +60,7 @@ execMake verbosity build_target target = do
                      Just p      -> p
 #endif
                      Nothing     -> "make"
-        baseArgs = ["--directory=libsass", if null target then "all" else target]
+        baseArgs = ["--directory=libsass", if null target then "all" else target, "CXX=clang++"]
         makeArgs = if null build_target
                       then baseArgs
                       else baseArgs ++ ["BUILD=" ++ build_target]
