@@ -84,7 +84,7 @@ makeLibsass _ f = do
     let verbosity = fromFlag $ configVerbosity f
         external = getCabalFlag "externalLibsass" f
         target = if getCabalFlag "sharedLibsass" f then "shared" else "static"
-    unless external $ updateLibsassVersion f
+    -- unless external $ updateLibsassVersion f
     unless external $ execMake verbosity target ""
     return emptyHookedBuildInfo
 
