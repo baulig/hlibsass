@@ -43,7 +43,7 @@ source-repository head
 
 flag externalLibsass
   description:       Use LibSass that is installed in the system.
-  default:           False
+  default:           True
 
 flag sharedLibsass
   description:

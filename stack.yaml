@@ -5,5 +5,5 @@ extra-deps: []
 flags:
   hlibsass:
     sharedlibsass: false
-    externallibsass: false
+    externallibsass: true
 extra-package-dbs: []
